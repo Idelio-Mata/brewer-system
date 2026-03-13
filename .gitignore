@@ -6,6 +6,10 @@
 target/
 *.class
 
+# Gradle
+.gradle/
+build/
+
 # Logs
 *.log
 

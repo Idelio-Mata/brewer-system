@@ -1,0 +1,26 @@
+# Normalize line endings automatically
+* text=auto
+
+# Shell scripts must use LF
+*.sh text eol=lf
+
+# Maven wrapper scripts
+mvnw text eol=lf
+
+# Gradle wrapper scripts
+gradlew text eol=lf
+
+# Windows scripts
+*.bat text eol=crlf
+
+# Java source files
+*.java text
+
+# XML files (pom, configs)
+*.xml text
+
+# HTML templates
+*.html text
+
+# Markdown documentation
+*.md text

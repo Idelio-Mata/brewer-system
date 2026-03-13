@@ -1,0 +1,14 @@
+# Eclipse/IDE files
+.idea/
+*.iml
+
+# Compiled files
+target/
+*.class
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -27,11 +27,14 @@
         <!-- Java Version -->
         <java.version>17</java.version>
 
+        <!-- Spring MVC -->
+        <spring-framework.version>7.0.5</spring-framework.version>
+
         <!-- Maven Version -->
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
-
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+
     </properties>
 
     <build>
@@ -46,6 +49,27 @@
             </plugin>
         </plugins>
     </build>
+
+    <!--  Gestor de Dependências  -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring-framework.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+    <!-- Spring MVC -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>
